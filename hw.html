@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CHARACTERS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .image {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+            body {
+                background: linear-gradient(120deg, #7f8c8d, #2ecc71);
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .title h1 {
+                text-align: center;
+                color: #e67e22;
+                margin-top: 20px;
+                text-shadow: 0 8px 20px #34495e;
+            }
+            .content-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 20px;
+                gap: 20px;
+            }
+            .main, .second {
+                flex: 1;
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.9);
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+            .main h2, .second h2 {
+                color: #222;
+                margin-bottom: 10px;
+            }
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                justify-items: center;
+                margin-top: 20px;
+            }
+            footer {
+                text-align: center;
+                padding: 10px;
+                background: #16a085;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            <h1><strong><u>FILM CHARACTERS</u></strong></h1>
+        </div>
+        <div class="content-container">
+            
+            <div class="main" role="region" aria-labelledby="lotr-title">
+                <h2 id="lotr-title"><strong>The Lord of the Rings</strong></h2>
+                <hr>
+                <div class="image-grid">
+                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrB_uuZyHoiRw6tD-9GpZzfhE1uwUKHFaKBw&s" alt="Frodo Baggins">
+                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaND4oHtjMMEALbyl4Zg-KdsXwYs85ykPEKw&s" alt="Samwise Gamgee">
+                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQsLq8jGXoZygQoBD47jVCzB-5nIPLIWGG_A&s" alt="Gandalf">
+                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2tLb6Bgm4SUNpHaHFPLTWKvukTQXWJUt2nw&s" alt="Legolas">
+                </div>
+            </div>
+            
+            <div class="second" role="region" aria-labelledby="avengers-title">
+                <h2 id="avengers-title"><strong>The Avengers</strong></h2>
+                <hr>
+                <div class="image-grid">
+                    <img class="image" src="https://playcontestofchampions.com/wp-content/uploads/2023/04/champion-iron-man.webp" alt="Iron Man">
+                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcLJB7eElhVvturLsjQVOGbhFFwmvA_v5OMQ&s" alt="Thor">
+                    <img class="image" src="https://www.superherotoystore.com/cdn/shop/articles/captain-america-marvel-comics_1200x.webp?v=1696315590" alt="Captain America">
+                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNuNLZJ6jQJHEDgDR3_7RbZvuLvSqranhBVA&s" alt="Hulk">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 Responsive Design. All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
